@@ -1,0 +1,42 @@
+<!doctype html>
+<html ng-app="DragDrop">
+<head>
+  <meta charset="utf-8">
+  <title>Test</title>
+  <script src="http://localhost:3502/vendor/assets/javascripts/angular/angular.js"></script>
+  <script src="http://localhost:3502/vendor/assets/javascripts/raphael/raphael.js"></script>
+  <script src="http://localhost:3502/lib/assets/javascripts/raphaelExtensions.js"></script>
+  <script src="http://localhost:3502/tmp/module.js.js"></script>
+  <script src="http://localhost:3502/tmp/directives.js.js"></script>
+  <script>
+    function TestCtrl($scope) {
+      $scope.settings = {
+        bank: {
+          location: 'bottom',
+          size: '70',
+          expressions: [
+            {text:'2.36 + 3.06'},
+            {text:'2.16 + 3.36'},
+            {text:'2.71 x 2'},
+            {text:'1.80 x 3'},
+            {text:'9.53 - 4.11'},
+            {text:'8.01 - 2.69'}
+          ]
+        },
+        zones: [
+        {
+          title: 'Zone 1',
+          title_size: '50'
+        },
+        {
+          title: 'Zone 2',
+          title_size: '50'
+        }]
+      };
+    }
+  </script>
+</head>
+<body>
+  <div ng-controller="TestCtrl" drag-drop width="400" height="400"></div>
+</body>
+</html>

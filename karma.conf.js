@@ -16,6 +16,7 @@ module.exports = function(config) {
     files: [
       "vendor/assets/javascripts/angular/angular.js",
       "vendor/assets/javascripts/angular/angular-mocks.js",
+      "vendor/assets/javascripts/raphael/raphael.js",
       "lib/assets/javascripts/module.js.coffee",
       "lib/assets/javascripts/directives.js.coffee",
       "test/*Spec.js.coffee"
@@ -24,7 +25,6 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
-      
     ],
 
 
